@@ -52,5 +52,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.basic5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,BasicA4ctiviy.class));
+            }
+        });
+
     }
 }

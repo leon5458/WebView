@@ -39,7 +39,7 @@ public class WebActivity extends AppCompatActivity{
         progressBar= findViewById(R.id.progressbar);//进度条
 
         webView =findViewById(R.id.web);
-        webView.loadUrl("file:///android_asset/file.html");//加载asset文件夹下html
+        webView.loadUrl("file:///android_asset/test1.html");//加载asset文件夹下html
 
         webView.addJavascriptInterface(this,"android");//添加js监听 这样html就能调用客户端
         webView.setWebChromeClient(webChromeClient);
@@ -49,8 +49,13 @@ public class WebActivity extends AppCompatActivity{
         webSettings.setJavaScriptEnabled(true);//允许使用js
         webSettings.setSupportZoom(true); //支持屏幕缩放
         webSettings.setBuiltInZoomControls(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);// 设置允许JS弹窗
 
     }
+
+
+
+
 
     //WebViewClient主要帮助WebView处理各种通知、请求事件
     private WebViewClient webViewClient=new WebViewClient(){

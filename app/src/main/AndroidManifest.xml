@@ -28,6 +28,7 @@
         <activity android:name=".WebActivity" />
         <activity android:name=".Baseic2Activity" />
         <activity android:name=".Baseic3Activity" />
+        <activity android:name=".BasicA4ctiviy"/>
 
 
         <provider

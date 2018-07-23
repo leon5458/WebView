@@ -28,7 +28,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:text="使用方法"
+        android:text="js调用android"
         android:background="#c2c"/>
 
     <TextView
@@ -45,7 +45,16 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:text="JS通过WebView调用Android代码"
+        android:text="JS通过WebView调用Android代码(该方法存在内存泄露)"
+        android:background="#cd2"/>
+
+
+    <TextView
+        android:id="@+id/basic5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="JS通过WebView调用Android代码方法2"
         android:background="#cd2"/>
 
 
